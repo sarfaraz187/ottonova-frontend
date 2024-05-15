@@ -591,6 +591,10 @@ body {
   position: fixed;
 }
 
+.relative {
+  position: relative;
+}
+
 .top-0 {
   top: 0px;
 }
@@ -599,8 +603,24 @@ body {
   z-index: 40;
 }
 
+.z-30 {
+  z-index: 30;
+}
+
+.z-50 {
+  z-index: 50;
+}
+
+.-z-40 {
+  z-index: -40;
+}
+
 .m-auto {
   margin: auto;
+}
+
+.mt-16 {
+  margin-top: 4rem;
 }
 
 .flex {
@@ -621,6 +641,10 @@ body {
 
 .h-9 {
   height: 2.25rem;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .w-10 {
@@ -794,6 +818,10 @@ body {
 
 .pt-0 {
   padding-top: 0px;
+}
+
+.pt-16 {
+  padding-top: 4rem;
 }
 
 .text-sm {
