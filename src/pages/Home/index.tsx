@@ -1,3 +1,9 @@
+import { Navbar } from '@/components/Navbar';
+
 export const Home = () => {
-  return <div>This is my home page</div>;
+  return (
+    <main className="bg-slate-200">
+      <Navbar />
+    </main>
+  );
 };

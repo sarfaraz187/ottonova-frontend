@@ -1,25 +1,14 @@
 import './App.css';
-import { useState } from 'react';
 import { Home } from '@/pages/Home';
-import { Button } from '@/components/ui/button';
+import { Route, Routes } from 'react-router-dom';
 
-export const App = () => {
-  const [count, setCount] = useState(0);
+const App = () => {
   return (
-    <div className="App">
-      <header className="h-screen flex flex-col items-center justify-center">
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <Button>Test</Button>
-        <Button
-          variant="outline"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </Button>
-      </header>
-    </div>
+    <>
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+      </Routes>
+    </>
   );
 };
 
