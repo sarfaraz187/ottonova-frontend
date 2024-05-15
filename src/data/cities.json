@@ -1,6 +1,7 @@
 {
   "cities": [
     {
+      "id": 78320144,
       "name": "Sydney",
       "name_native": "Sydney",
       "country": "Australia",
@@ -13,9 +14,16 @@
         "Sydney Opera House",
         "Sydney Harbour Bridge",
         "Queen Victoria Building"
+      ],
+      "thumbnails": [
+        "https://images.unsplash.com/photo-1546268060-2592ff93ee24?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1523428096881-5bd79d043006?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1598948485421-33a1655d3c18?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1528072164453-f4e8ef0d475a?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       ]
     },
     {
+      "id": 14680272,
       "name": "New York City",
       "name_native": "New York City",
       "country": "USA",
@@ -28,9 +36,16 @@
         "Chrysler Building",
         "Brooklyn Bridge",
         "Madison Square Garden"
+      ],
+      "thumbnails": [
+        "https://images.unsplash.com/photo-1485871981521-5b1fd3805eee?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1492666673288-3c4b4576ad9a?q=80&w=2832&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1522083165195-3424ed129620?q=80&w=2797&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1483653364400-eedcfb9f1f88?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       ]
     },
     {
+      "id": 50443405,
       "name": "Madrid",
       "name_native": "Madrid",
       "country": "Spain",
@@ -39,9 +54,16 @@
       "longitude": "-3.703790",
       "population": "3223000",
       "founded": "1083",
-      "landmarks": ["Royal Palace", "Plaza Mayor", "Plaza de Cibeles"]
+      "landmarks": ["Royal Palace", "Plaza Mayor", "Plaza de Cibeles"],
+      "thumbnails": [
+        "https://images.unsplash.com/photo-1539037116277-4db20889f2d4?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1543783207-ec64e4d95325?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1558370781-d6196949e317?q=80&w=2958&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1577788922620-a85ef7281842?q=80&w=2938&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      ]
     },
     {
+      "id": 84200014,
       "name": "Moscow",
       "name_native": "Москва",
       "country": "Russia",
@@ -53,6 +75,7 @@
       "landmarks": ["Saint Basil's Cathedral", "Kremlin", "Bolshoi Theatre"]
     },
     {
+      "id": 38246106,
       "name": "Tokyo",
       "name_native": "東京",
       "country": "Japan",
@@ -64,6 +87,7 @@
       "landmarks": ["Meji Shrine", "Asakusa", "Tokyo Skytree"]
     },
     {
+      "id": 65365621,
       "name": "Lagos",
       "name_native": "Lagos",
       "country": "Nigeria",
@@ -79,6 +103,7 @@
       ]
     },
     {
+      "id": 35181001,
       "name": "Sao Paulo",
       "name_native": "São Paulo",
       "country": "Brazil",
@@ -94,6 +119,7 @@
       ]
     },
     {
+      "id": 97235864,
       "name": "Munich",
       "name_native": "München",
       "country": "Germany",
