@@ -17,7 +17,7 @@ const Swiper = ({ thumbnails }: { thumbnails: string[] }) => {
   }, []);
 
   return (
-    <swiper-container ref={swiperRef} init="false" class=" px-4">
+    <swiper-container ref={swiperRef} init="false" class="p-4">
       {thumbnails.map((url) => {
         return (
           <swiper-slide class="flex items-center justify-center">

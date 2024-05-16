@@ -16,12 +16,12 @@ export const CityDetail = () => {
   }, []);
 
   return (
-    <>
-      <section className="city-thumbnails mt-20 max-w-7xl m-auto">
+    <section className="bg-slate-200 mt-20 pb-8 h-full">
+      <div className="city-thumbnails max-w-7xl m-auto">
         <Swiper
           thumbnails={cityDetails?.thumbnails ? cityDetails?.thumbnails : []}
         />
-        <article className="city-details bg-gray-200 rounded-lg m-4">
+        <article className="city-details bg-white m-4 rounded-lg">
           <div className="p-5 pb-0 text-xl font-semibold">Country Details</div>
           <div className="p-5 gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             {cityDetails &&
@@ -39,7 +39,7 @@ export const CityDetail = () => {
               })}
           </div>
         </article>
-      </section>
-    </>
+      </div>
+    </section>
   );
 };
