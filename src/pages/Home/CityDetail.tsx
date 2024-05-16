@@ -1,18 +1,21 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import citiesJson from '@/data/cities.json';
 import { City } from '@/models/City';
 import Swiper from '@/components/Swiper';
 import { capitalizeStr } from '@/lib/helpers';
+import axiosClient from '@/services/http';
 
 export const CityDetail = () => {
   const { id } = useParams();
+  const httpClient = axiosClient();
   const [cityDetails, setCityDetails] = useState<City | null>(null);
 
   useEffect(() => {
-    if (!id) return;
-    let foundCity = citiesJson.cities.find((obj) => obj.id === Number(id));
-    if (foundCity) setCityDetails(foundCity);
+    (async () => {
+      if (!id) return;
+      const response = await httpClient.get(`cities/${id}`);
+      if (response.data) setCityDetails(response.data);
+    })();
   }, []);
 
   return (
