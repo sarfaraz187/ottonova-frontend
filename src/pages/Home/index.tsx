@@ -18,16 +18,16 @@ export const Home = () => {
     setCities(citiesJson?.cities);
   }, []);
 
-  const handleCardClick = (city: City) => {
-    console.log('Selected City :', city);
-    navigate(`/city/${city.id}`);
-  };
-
   return (
     <main className="bg-slate-200 z-40 mt-20 h-vh ">
-      <div className="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 pt-6 gap-4 max-w-7xl m-auto px-6">
+      <div className="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 pt-6 gap-4 max-w-7xl m-auto p-6 h-vh">
         {cities?.map((city) => {
-          return <CityCard city={city} onClick={() => handleCardClick(city)} />;
+          return (
+            <CityCard
+              city={city}
+              onClick={() => navigate(`/cities/${city.id}`)}
+            />
+          );
         })}
       </div>
     </main>
