@@ -23,9 +23,12 @@ const Swiper = ({ thumbnails }: { thumbnails: string[] }) => {
       init={false}
       style={{ padding: '16px' }}
     >
-      {thumbnails.map((url) => {
+      {thumbnails.map((url, index) => {
         return (
-          <swiper-slide style={{ display: 'flex', justifyContent: 'center' }}>
+          <swiper-slide
+            style={{ display: 'flex', justifyContent: 'center' }}
+            key={index}
+          >
             <img
               src={url}
               width={800}

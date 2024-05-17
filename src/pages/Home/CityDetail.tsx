@@ -31,7 +31,7 @@ export const CityDetail = () => {
               Object.entries(cityDetails).map(([key, value]) => {
                 return (
                   !['id', 'thumbnails'].includes(key) && (
-                    <div className=" items-center">
+                    <div className="items-center" key={key}>
                       <p className="text-lg font-semibold">
                         {capitalizeStr(key)}
                       </p>
