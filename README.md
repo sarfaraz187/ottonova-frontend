@@ -9,7 +9,7 @@ The repository holds code for ottonova coding challenge. The primary objective o
 - **TypeScript**: A typed superset of JavaScript that compiles to plain JavaScript.
 - **Tailwind CSS**: A utility-first CSS framework for rapidly building custom designs.
 - **Swiper.js**: A powerful and modern slider library for building touch-enabled sliders and carousels.
-- **ShadowCSS**: A library for encapsulating styles and creating scoped CSS in your components.
+- **shadcn/ui**: Beautifully designed components that you can copy and paste into your apps. Accessible. Customizable. Open Source.
 
 ### Prerequisites
 
