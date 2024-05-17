@@ -17,11 +17,22 @@ const Swiper = ({ thumbnails }: { thumbnails: string[] }) => {
   }, []);
 
   return (
-    <swiper-container ref={swiperRef} init="false" class="p-4">
+    <swiper-container
+      centeredSlides={true}
+      ref={swiperRef}
+      init={false}
+      style={{ padding: '16px' }}
+    >
       {thumbnails.map((url) => {
         return (
-          <swiper-slide class="flex items-center justify-center">
-            <img src={url} width={800} height={600} class="rounded-xl" alt="" />
+          <swiper-slide style={{ display: 'flex', justifyContent: 'center' }}>
+            <img
+              src={url}
+              width={800}
+              height={600}
+              className="rounded-xl"
+              alt=""
+            />
           </swiper-slide>
         );
       })}

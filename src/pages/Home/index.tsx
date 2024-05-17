@@ -1,7 +1,6 @@
 import { City } from '@/models/City';
 import axiosClient from '@/services/http';
 import { useEffect, useState } from 'react';
-// import citiesJson from '@/data/cities.json';
 import { CityCard } from './CityCard';
 import { useNavigate } from 'react-router-dom';
 
