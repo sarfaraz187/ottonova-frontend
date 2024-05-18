@@ -6,7 +6,7 @@ export const Navbar = () => {
       <div className="flex m-auto max-w-7xl gap-5">
         <Link to="/">
           <img
-            src="/company.png"
+            src={`${import.meta.env.BASE_URL}company.png`}
             alt="Ottonova Logo"
             height="40"
             width="180"

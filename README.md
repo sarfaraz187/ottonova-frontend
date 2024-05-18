@@ -11,6 +11,16 @@ The repository holds code for ottonova coding challenge. The primary objective o
 - **Swiper.js**: A powerful and modern slider library for building touch-enabled sliders and carousels.
 - **shadcn/ui**: Beautifully designed components that you can copy and paste into your apps. Accessible. Customizable. Open Source.
 
+### Preview
+
+The application has been deployed to Github Pages. Kindly use the below link to preview the application.
+
+```
+ https://sarfaraz187.github.io/ottonova-frontend/
+```
+
+**Note:** Make sure to run the backend which in the website
+
 ### Prerequisites
 
 Make sure you have Node.js and npm (or yarn) installed on your local machine.
