@@ -1,30 +1,31 @@
-import { City } from '@/models/City';
-import axiosClient from '@/services/http';
-import { useEffect, useState } from 'react';
 import { CityCard } from './CityCard';
 import { useNavigate } from 'react-router-dom';
 import Error from '@/components/Error';
+import { useQuery } from '@tanstack/react-query';
+import { getCities } from '@/api/cities';
+import { City } from '@/models/City';
 
 export const Home = () => {
-  const httpClient = axiosClient();
-  const [cities, setCities] = useState<City[]>([]);
   const navigate = useNavigate();
 
-  useEffect(() => {
-    (async () => {
-      const response = await httpClient.get('cities');
-      console.log('Cities from backend :', response);
-      setCities(response.data.length > 0 ? response.data : []);
-    })();
-  }, []);
+  const {
+    status,
+    error,
+    data: cities,
+  } = useQuery({
+    queryKey: ['cities'],
+    queryFn: getCities,
+    retry: 0,
+  });
 
   return (
     <main className="bg-slate-200 z-40 mt-20 h-vh">
-      {cities.length > 0 && (
+      {status === 'success' && (
         <div className="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 pt-6 gap-4 max-w-7xl m-auto p-6 h-vh">
-          {cities?.map((city) => {
+          {cities?.map((city: City) => {
             return (
               <CityCard
+                key={city.id}
                 city={city}
                 onClick={() => navigate(`/cities/${city.id}`)}
               />
@@ -32,7 +33,7 @@ export const Home = () => {
           })}
         </div>
       )}
-      {cities.length === 0 && <Error />}
+      {error && <Error />}
     </main>
   );
 };
