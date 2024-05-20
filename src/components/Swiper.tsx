@@ -26,6 +26,7 @@ const Swiper = ({ thumbnails }: { thumbnails: string[] }) => {
       {thumbnails.map((url, index) => {
         return (
           <swiper-slide
+            className="swiper-slide"
             style={{ display: 'flex', justifyContent: 'center' }}
             key={index}
           >

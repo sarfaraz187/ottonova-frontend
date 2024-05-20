@@ -10,7 +10,7 @@ const queryClient = new QueryClient();
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <BrowserRouter basename="/ottonova-frontend">
+    <BrowserRouter basename="/ottonova-frontend/">
       <QueryClientProvider client={queryClient}>
         <ReactQueryDevtools initialIsOpen={false} />
         <App />

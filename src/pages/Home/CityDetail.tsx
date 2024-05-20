@@ -26,11 +26,11 @@ export const CityDetail = () => {
           <Swiper
             thumbnails={cityDetails?.thumbnails ? cityDetails?.thumbnails : []}
           />
-          <article className="city-details bg-white m-4 rounded-lg">
+          <article className="bg-white m-4 rounded-lg">
             <div className="p-5 pb-0 text-xl font-semibold">
               Country Details
             </div>
-            <div className="p-5 gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            <div className="city-details p-5 gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
               {cityDetails &&
                 Object.entries(cityDetails).map(([key, value]) => {
                   return (

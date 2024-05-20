@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 export const CityCard = ({ city, onClick }: CityCardProps) => {
   return (
-    <Card className="cursor-pointer" onClick={onClick}>
+    <Card className="city-card cursor-pointer" onClick={onClick}>
       <CardHeader className="flex items-center py-4 pb-0">
         <CardTitle>{city.country}</CardTitle>
       </CardHeader>
