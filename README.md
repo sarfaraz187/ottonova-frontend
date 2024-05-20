@@ -10,6 +10,8 @@ The repository holds code for ottonova coding challenge. The primary objective o
 - **Tailwind CSS**: A utility-first CSS framework for rapidly building custom designs.
 - **Swiper.js**: A powerful and modern slider library for building touch-enabled sliders and carousels.
 - **shadcn/ui**: Beautifully designed components that you can copy and paste into your apps. Accessible. Customizable. Open Source.
+- **Playwright**: Playwright enables reliable end-to-end testing for modern web apps.
+- **TankStack Query**: Powerful asynchronous state management for TS/JS, React,
 
 ### Preview
 
@@ -58,6 +60,14 @@ yarn or npm run build
 ```
 
 This will generate a production-ready build of your application in the dist directory.
+
+### Test Cases
+
+Playwright has been installed and test cases have been added to the Home and City pages. In order to run the test cases in UI mode. Please run the below command:
+
+```
+yarn or npm run test
+```
 
 ### Pages
 
