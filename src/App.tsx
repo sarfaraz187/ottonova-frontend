@@ -1,16 +1,19 @@
 import './App.css';
-import { Home } from '@/pages/Home';
+import { lazy } from 'react';
 import { Route, Routes } from 'react-router-dom';
-import { CityDetail } from './pages/Home/CityDetail';
 import { Navbar } from './components/Navbar';
+
+const Home = lazy(() => import('@/pages/Home'));
+const CityDetail = lazy(() => import('@/pages/Home/CityDetail'));
 
 const App = () => {
   return (
     <>
-      <Navbar />
       <Routes>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="/cities/:id" element={<CityDetail />}></Route>
+        <Route path="/" element={<Navbar />}>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/cities/:id" element={<CityDetail />}></Route>
+        </Route>
       </Routes>
     </>
   );

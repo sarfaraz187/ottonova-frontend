@@ -6,7 +6,7 @@ import { useQuery } from '@tanstack/react-query';
 import Error from '@/components/Error';
 import { City } from '@/models/City';
 
-export const CityDetail = () => {
+const CityDetail = () => {
   const { id } = useParams();
 
   const {
@@ -52,3 +52,5 @@ export const CityDetail = () => {
     </section>
   );
 };
+
+export default CityDetail;
