@@ -39,7 +39,9 @@ const CityDetail = () => {
                         <p className="text-lg font-semibold">
                           {capitalizeStr(key)}
                         </p>
-                        {Array.isArray(value) ? value.join(', ') : value}
+                        {Array.isArray(value)
+                          ? value.map((landmark) => <li>{landmark}</li>)
+                          : value}
                       </div>
                     )
                   );
